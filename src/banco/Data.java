@@ -1,8 +1,7 @@
 package banco;
 
 public class Data {
-    private int dia, mes, ano;
-
+    public int dia, mes, ano;
     // Construtor da classe Data
     public Data(int dia, int mes, int ano) {
         this.dia = dia;
@@ -28,6 +27,13 @@ public class Data {
     public int getAno() {
         return ano;
     }
-
     
+    // ********
+    // Métodos de ação
+    // ********
+
+    /// Método para imprimir a data
+    public void imprimirData() {
+        System.out.println(this.dia + "/" + this.mes + "/" + this.ano);
+    }
 }
